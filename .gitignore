@@ -1,5 +1,19 @@
 .DS_Store
 
-/node_modules
+src/*
+!src/images/
 
-/css
+src/*
+!src/js/
+
+src/*
+!sass/
+
+src/*
+!index.html
+
+src/*
+!package.json
+
+src/*
+!package-lock.json
