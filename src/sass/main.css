@@ -213,6 +213,7 @@ body {
 
 .navbar__items--item {
   display: inline;
+  color: #9e9aa7;
   margin-left: 1.5vw;
 }
 
@@ -227,6 +228,7 @@ body {
 }
 
 .navbar__login {
+  color: #9e9aa7;
   margin-left: 2rem;
 }
 
@@ -253,7 +255,7 @@ body {
   background-color: #2acfcf;
   border-radius: 2rem;
   border: none;
-  padding: .5rem 1.5vw;
+  padding: .8rem 1.5vw;
   outline: none;
   cursor: pointer;
   -webkit-transition: all .2s;
@@ -336,7 +338,7 @@ body {
   background-color: #2acfcf;
   border-radius: 2rem;
   border: none;
-  padding: .5rem 1.5vw;
+  padding: .8rem 1.5vw;
   outline: none;
   cursor: pointer;
   -webkit-transition: all .2s;
@@ -405,7 +407,7 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0 auto 2rem auto;
-  padding: 2rem 2rem .5rem 2rem;
+  padding: 3rem 2rem 1.5rem 2rem;
   border-radius: .3rem;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -428,7 +430,7 @@ body {
 
 .content__shorten--input {
   width: 80%;
-  padding: .7rem 0 .7rem 2vw;
+  padding: 1rem 0 1rem 2vw;
   border-radius: .5rem;
   border: none;
   outline: none;
@@ -471,7 +473,7 @@ body {
   background-color: #2acfcf;
   border-radius: 0.5rem;
   border: none;
-  padding: .5rem 1.5vw;
+  padding: .8rem 1.5vw;
   outline: none;
   cursor: pointer;
   -webkit-transition: all .2s;
@@ -576,7 +578,7 @@ body {
   background-color: #2acfcf;
   border-radius: 0.5rem;
   border: none;
-  padding: .5rem 1.5vw;
+  padding: .8rem 1.5vw;
   outline: none;
   cursor: pointer;
   -webkit-transition: all .2s;
@@ -776,7 +778,7 @@ body {
   background-color: #2acfcf;
   border-radius: 2rem;
   border: none;
-  padding: .5rem 1.5vw;
+  padding: .8rem 1.5vw;
   outline: none;
   cursor: pointer;
   -webkit-transition: all .2s;
@@ -811,16 +813,16 @@ body {
   }
 }
 
-.footer__logo {
+.footer__h2 {
   -ms-flex-preferred-size: 30%;
       flex-basis: 30%;
-  -webkit-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
-          filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+  font-size: 2rem;
+  color: #fff;
   cursor: pointer;
 }
 
 @media only screen and (max-width: 1000px) {
-  .footer__logo {
+  .footer__h2 {
     -ms-flex-preferred-size: 20%;
         flex-basis: 20%;
   }

@@ -8,13 +8,10 @@
         padding: 3rem $margin-left-small;
     }
 
-    &__logo {
+    &__h2 {
         flex-basis: 30%;
-        // change color at SVG:
-        // enter HEX at https://codepen.io/sosuke/pen/Pjoqqp
-        // also possible: change the color directly in the svg-file. Open it with an editor and
-        // write the style directly in the path-tag: "<path style="fill:#AB7C94;" d="M114.26,..."
-        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+        font-size: 2rem;
+        color: #fff;
         cursor: pointer;
 
         @media only screen and (max-width: 1000px) {
