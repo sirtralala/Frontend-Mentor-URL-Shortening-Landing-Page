@@ -325,7 +325,7 @@ body {
 
 @media only screen and (max-width: 650px) {
   .header__content--text {
-    margin: 0 2rem;
+    margin: 2rem 0;
   }
 }
 
