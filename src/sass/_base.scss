@@ -1,0 +1,47 @@
+// COLORS PRIMARY
+$cyan: hsl(180, 66%, 49%);
+$dark-violet: hsl(257, 27%, 26%);
+
+// COLORS SECONDARY
+$red: hsl(0, 87%, 67%);
+
+// COLORS NEUTRAL
+$gray: hsl(0, 0%, 75%);
+$light-gray: hsl(225, 33%, 95%);
+$grayish-violet: hsl(257, 7%, 63%);
+$very-dark-blue: hsl(255, 11%, 22%);
+$very-dark-violet: hsl(260, 8%, 14%);
+
+
+// TYPOGRAPHY
+$font-size-default: 112.5%;
+$font-family-default: 'Poppins', sans-serif;
+$font-weight-default: 500;
+
+
+// POSITION
+$margin-left-default: 10vw;
+$margin-left-small: 2vw;
+
+// MIXIN
+@mixin btn ($radius) {
+    color: #fff;
+    font-size: $font-size-default;
+    background-color: $cyan;
+    border-radius: $radius;
+    border: none;
+    padding: .5rem 1.5vw;
+    outline: none;
+    cursor: pointer;
+    transition: all .2s;
+
+    &:hover {
+        transform: scale(1.06);
+        background-color: hsl(180, 83%, 55%);
+    }
+
+    &:active {
+        transform: scale(1.03);
+        background-color: $cyan;
+    }
+}

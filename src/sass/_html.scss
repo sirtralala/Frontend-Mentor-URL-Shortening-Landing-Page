@@ -1,0 +1,18 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: $font-size-default;
+    font-family: $font-family-default;
+    font-weight: $font-weight-default;
+    color: $dark-violet;
+}
+
+body {
+    box-sizing: border-box;
+}
