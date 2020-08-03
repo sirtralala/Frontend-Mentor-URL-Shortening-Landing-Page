@@ -1,0 +1,92 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: $very-dark-violet;
+    padding: 3rem $margin-left-default;
+
+    @media only screen and (max-width: 800px) {  
+        padding: 3rem $margin-left-small;
+    }
+
+    &__logo {
+        flex-basis: 30%;
+        // change color at SVG:
+        // enter HEX at https://codepen.io/sosuke/pen/Pjoqqp
+        // also possible: change the color directly in the svg-file. Open it with an editor and
+        // write the style directly in the path-tag: "<path style="fill:#AB7C94;" d="M114.26,..."
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+        cursor: pointer;
+
+        @media only screen and (max-width: 1000px) {
+            flex-basis: 20%;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: space-around;
+        flex-basis: 50%;
+        color: #fff;
+        transform: translateY(-.5rem);
+
+        @media only screen and (max-width: 650px) {  
+            flex-direction: column;
+            text-align: center;
+        }
+
+        &--list {
+            list-style-type: none;
+            line-height: 2rem;
+
+            &>li:not(:first-child) {
+                font-size: 80%;
+            }
+
+            &>li:first-child {
+                font-weight: 700;
+            }
+
+            &>li:not(:first-child):hover {
+                color: $cyan;
+                cursor: pointer;
+            }
+
+            @media only screen and (max-width: 650px) {
+                margin-top: 2rem;
+            }
+        }
+    }
+
+    &__social-media {
+    
+        &--icon {
+            padding-left: 1vw;
+
+            &:hover {
+                filter: invert(20%) sepia(67%) saturate(454%) hue-rotate(131deg) brightness(99%) contrast(93%);
+                cursor: pointer
+            }
+        }
+
+        @media only screen and (max-width: 650px) {
+            margin-top: 2rem;
+        }
+    }
+
+    @media only screen and (max-width: 650px) {  
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.attribution {
+    margin-top: 1px;
+    padding: 2rem;
+    font-size: 60%;
+    background-color: $very-dark-violet;
+    color: #fff;
+
+    &>a {
+        color: #fff;
+    }
+}

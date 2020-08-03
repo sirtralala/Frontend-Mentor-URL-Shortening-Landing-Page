@@ -1,0 +1,14 @@
+{
+  "name": "9-url-shortening-api-master",
+  "version": "1.0.0",
+  "description": "coding challenge 9",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css"
+  },
+  "author": "Thomas Dörflinger",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

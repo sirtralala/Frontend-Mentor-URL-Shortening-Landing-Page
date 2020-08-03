@@ -1,0 +1,68 @@
+.header {
+    display: flex;
+    align-items: center;
+
+    margin-left: $margin-left-default;
+
+    @media only screen and (max-width: 800px) {  
+        margin-left: $margin-left-small;
+    }
+
+    @media only screen and (max-width: 650px) {  
+        flex-direction: column;
+        margin: 0 2rem;
+    }
+
+    &__content {
+        &--h1 {
+            font-size: 3.5rem;
+            line-height: 4.5rem;
+
+            @media only screen and (max-width: 800px) {  
+                font-size: 2rem;
+                line-height: 2.5rem;
+            }
+
+            @media only screen and (max-width: 650px) {  
+                font-size: 3rem;
+                line-height: 3.5rem;
+                margin: 2rem 0 1rem 0;
+            }
+        }
+    
+        &--text {
+            margin-right: 4vw;
+            color: $grayish-violet;
+
+            @media only screen and (max-width: 650px) {  
+                margin: 0 2rem;
+            }
+        }
+    
+        &--btn {
+            margin-top: 2rem;
+            @include btn (2rem);
+
+            @media only screen and (max-width: 650px) {  
+                width: 50%;
+                padding: 1rem 1.5vw;
+            }
+        }
+
+        @media only screen and (max-width: 650px) {  
+            order: 2;
+            text-align: center;
+        }
+    }
+   
+    &__pic {
+        width: 50vw;
+        // Bild beschneiden, um die Beschnitt-Länge an den Rand rücken... geht nicht ohne Scroll-Balken!
+        /* clip-path: inset(0 6rem 0 0);
+        transform: translateX(6rem); */
+
+        @media only screen and (max-width: 650px) {  
+            width: 90vw;
+        }
+    }
+}

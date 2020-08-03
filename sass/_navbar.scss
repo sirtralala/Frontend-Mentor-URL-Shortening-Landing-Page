@@ -1,0 +1,174 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem $margin-left-default;
+
+    @media only screen and (max-width: 800px) {  
+        margin: 2rem $margin-left-small;
+    }
+
+    @media only screen and (max-width: 650px) {
+        flex-wrap: wrap;
+    }
+
+    &__logo {
+        flex-basis: 10%;
+        cursor: pointer;
+    }
+
+    // ************************************* MOBILE MENU *************************************
+    &__mobile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+    }
+
+    &__checkbox {
+        display: none;
+    }
+
+    &__checkbox:checked ~ &__mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        order: 3;
+        flex-basis: 100%;
+        background-color: $very-dark-blue;
+        border-radius: 1rem;
+        border: none;
+        color: #fff;
+        padding: 2rem;
+        margin-top: 1rem;
+    }
+
+    &__checkbox:checked ~ &__mobile > &__items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        order: 4;
+        flex-basis: 100%;
+        margin-left: 0;
+    }
+
+    &__checkbox:checked ~ &__mobile > &__items > &__items--item {
+        margin: .4rem;
+    }
+
+    &__checkbox:checked ~ &__mobile > &__login {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        order: 5;
+        flex-basis: 100%;
+        margin: 0;
+        width: 100%;
+    }
+
+    &__checkbox:checked ~ &__mobile > &__login > &__login--login {
+        margin: .4rem;
+        margin-bottom: 1rem;
+    }
+
+    &__checkbox:checked ~ &__mobile > &__login > &__login--signup {
+        width: 70%;
+        padding: 1rem 1.5vw;
+    }
+
+    // mobile view: horizontal gray line above login
+    &__checkbox:checked ~ &__mobile > &__login::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: $grayish-violet;
+        margin: 1.5rem 0;
+    }
+
+    &__icon-mobile {
+        display: none;
+
+        @media only screen and (max-width: 650px) {
+            display: block;
+            cursor: pointer;
+            margin-left: auto;
+        }
+        
+        // burger icon for mobile menu
+        &--line {
+            display: block;
+            width: 2.4rem;
+            height: 3px;
+            background-color: $grayish-violet;
+            transform: translateY(-.5rem);
+
+            &::before,
+            &::after {
+                content: "";
+                display: block;
+                height: 3px;
+                background-color: $grayish-violet;
+                transform: translateY(-.7rem);
+            }
+
+            &::after {
+                transform: translateY(.5rem);
+                padding: .1rem;
+            }
+        }
+    }
+
+    // ************************************* MOBILE MENU END *************************************
+
+    &__items {
+        list-style-type: none;
+        margin-left: 2vw;
+        cursor: pointer;
+
+        @media only screen and (max-width: 650px) {  
+            display: none;
+        }
+        
+        &--item {
+            display: inline;
+            margin-left: 1.5vw;
+
+            &:hover {
+                font-weight: 700;
+                margin-left: 1.3vw;
+            }
+
+            &:last-of-type:hover {
+                font-weight: 700;
+                margin-left: 1.35vw;
+            }
+        }
+    }
+
+    &__login {
+        margin-left: 2rem;
+
+        @media only screen and (max-width: 650px) {  
+            display: none;
+        }
+
+        &--login {
+            text-decoration: none;
+            color: inherit;
+            margin-right: 2vw;
+
+            &:hover {
+                font-weight: 700;
+                margin-left: -.1vw;
+            }
+        }
+
+        &--signup {
+            @include btn (2rem);
+        }
+    }
+}

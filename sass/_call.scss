@@ -1,0 +1,18 @@
+.call {
+    text-align: center;
+    padding: 3rem;
+    background-image: url("/images/bg-boost-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $very-dark-blue;
+
+    &__h2 {
+        font-size: 2rem;
+        color: #fff;
+        margin-bottom: .5rem;
+    }
+
+    &__btn {
+        @include btn (2rem); 
+    }
+}

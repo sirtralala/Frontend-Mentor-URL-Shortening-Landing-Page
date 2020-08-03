@@ -1,0 +1,30 @@
+*,
+*::after,
+*::before {
+    /*  basic reset of margin and padding */
+    margin: 0;
+    padding: 0;
+    /*  make box-sizing inherit the given value in the body */
+    box-sizing: inherit;
+}
+
+/*  1) set root font-size to 10px because 1rem is exactly 1 times the root font-size --> easier to calculate 
+    2) BUT even better is to set the root font-size to 100% and make it depending on the user's browser default setting
+    3) finally since we don't want 16px (default setting) but instead 10px we set it to 62.5% (10 / 16) */
+html {
+    font-size: $font-size-default;
+    font-family: $font-family-default;
+    font-weight: $font-weight-default;
+    color: $dark-violet;
+}
+
+body {
+    /*  border-box will be inherited to all elements whithin in the body
+        --> see "box-sizing: inherit" in *{} */
+    box-sizing: border-box;
+    
+    /* border-box means, that height and width will be defined for the entire box 
+       (including the padding and the border) and not just the content area.
+	    This also means that paddings and borders will reduce the inner width of the content area
+        instead of adding them to the total width of the element */
+}
