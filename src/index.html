@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <navbar class="navbar">
+  <nav class="navbar">
     <img src="./images/logo.svg" alt="Shortly logo" class="navbar__logo">
 
     <!-- burger menu mobile -->
@@ -37,7 +37,7 @@
         <button class="navbar__login--signup">Sign Up</button>
       </div>
     </div>
-  </navbar>
+  </nav>
   
   <section class="header">
     <div class="header__content">
@@ -53,7 +53,7 @@
 
   <section class="content">
     <div class="content__shorten">
-      <input type="url" id="inputURL" class="content__shorten--input" placeholder="Shorten a link here...">
+      <input type="url" id="inputURL" name="inputURL" class="content__shorten--input" placeholder="Shorten a link here...">
       <button class="content__shorten--btn" onclick="shortenURL()">Shorten It!</button>
       <p id="addLink" class="content__shorten--insertLink">Please add a link</p>
     </div>
@@ -153,6 +153,6 @@
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script type="text/javascript" src="./js/script.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 </html>
