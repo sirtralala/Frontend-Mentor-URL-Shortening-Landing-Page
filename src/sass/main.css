@@ -330,7 +330,7 @@ body {
 }
 
 .header__content--btn {
-  margin-top: 2rem;
+  margin: 2rem 0;
   color: #fff;
   font-size: 112.5%;
   background-color: #2acfcf;
